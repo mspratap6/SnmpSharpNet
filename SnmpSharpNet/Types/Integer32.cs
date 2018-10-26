@@ -158,7 +158,7 @@ namespace SnmpSharpNet
         public void SetRandom()
         {
             Random rand = new Random();
-            _value = rand.Next();
+            _value = rand.Next(0, 9999);
         }
 
         #region encode and decode methods
